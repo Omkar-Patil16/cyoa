@@ -1,0 +1,17 @@
+write a go struct for the json data use mhot site in description 
+create story.go with package cyoa and paste the struct
+create option struct
+create story type map of string to chapter
+create a cmd and inside dir cyoaweb which hold our main.go  this will run our main web application
+
+now we want to parse the json file to story struct
+  - we create a flag to pass the file and print the filename getting used
+  - Open the file also look for error
+  - create a instance of the Jsonfile decoder which takes io.Reader
+  - decode the file to var created from story package, look for error and print the var
+  - 
+
+
+// refactoring
+
+- create a func of json parser in story.go
