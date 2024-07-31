@@ -15,3 +15,38 @@ now we want to parse the json file to story struct
 // refactoring
 
 - create a func of json parser in story.go
+
+// add html template and star rendering story
+
+- add the html template as var in main.go
+
+// create a handler to render the template
+// we are unsing the handler interface
+
+- create a handler func which is returns http.Hanlder 
+- create a handler struct which will be returned in previous function
+- create func ServeHttp with your hanlder 
+- create a template by using func init 
+- create a global var as pointer to template
+- excute the template by passing some data that is story
+- create a port flag
+
+
+31-07-24
+
+// parse the path to call a perticular story
+
+- get the path from quest 
+- check if path is empty or / go to start of the story to intro
+- slice the path to remove the slash 
+- check if the path exist in the map
+  - if it exist and there is error handle and log the error
+  - else only return
+  - if path not found http.Error
+
+
+
+// create a path function 
+- create a function that retruns handler option
+- create a path function that parse new path
+- updated the htmp template 
